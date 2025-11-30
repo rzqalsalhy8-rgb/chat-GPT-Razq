@@ -62,3 +62,60 @@ body{
   font-weight:bold;
   cursor:pointer;
 }
+/* إخفاء العناصر عند الحاجة */
+.hidden {
+  display: none;
+}
+
+/* تنسيق بسيط لصفحة تسجيل الدخول */
+#login-section {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+}
+
+#login-form .field {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#login-form label {
+  font-size: 14px;
+}
+
+#login-form input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+#login-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: #f97373;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 10px;
+}

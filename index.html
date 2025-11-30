@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>دردشة</title>
-  <link rel="stylesheet" href="chatGPT.css">
+  <meta charset="UTF-8" />
+  <title>مشروع ChatGPT مع تسجيل دخول</title>
+  <link rel="stylesheet" href="chatGPT.css" />
 </head>
 <body>
-س
-  <h3 class="title">اهلأ وسهلا بكم في(chatGPT Razq)</h3>
 
-  <div id="chat"></div>
+  <!-- ✅ جزء تسجيل الدخول -->
+  <section id="login-section">
+    <h2 class="title">تسجيل الدخول إلى نظام الدردشة</h2>
 
-  <div id="box">
-    <input type="text" id="txt" placeholder="اكتب رسالة...">
-    <button id="send">إرسال</button>
-  </div>
+    <form id="login-form">
+      <div class="field">
+        <label for="username">اسم المستخدم</label>
+        <input type="text" id="username" placeholder="اكتب اسمك هنا" />
+      </div>
 
+      <div class="field">
+        <label for="password">الرمز السري</label>
+        <input type="password" id="password" placeholder="اكتب الرمز السري" />
+      </div>
+
+      <button type="submit" id="login-btn">دخول</button>
+
+      <p id="login-error" class="error-msg"></p>
+
+      <p class="hint">
+        ملاحظة: استخدم اسم المستخدم <strong>student</strong> والرمز <strong>1234</strong>
+      </p>
+    </form>
+  </section>
+
+  <!-- ✅ جزء الدردشة (مخفي قبل تسجيل الدخول) -->
+  <section id="chat-section" class="hidden">
+    <h3 class="title">واجهة دردشة (محاكي ChatGPT RAZQ)</h3>
+
+    <div id="chat"></div>
+
+    <div id="box">
+      <input type="text" id="txt" placeholder="اكتب رسالة..." />
+      <button id="send">إرسال</button>
+    </div>
+  </section>
+
+  <!-- ربط كود الجافاسكربت -->
   <script src="chatGPT.js"></script>
 </body>
 </html>
